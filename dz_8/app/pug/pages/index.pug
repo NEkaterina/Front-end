@@ -1,0 +1,157 @@
+include ../../../node_modules/bemto.pug/bemto.pug
+include ../template/bem.pug
+include ../template/link.pug
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(title="index")
+		+style()
+		+script()
+	body
+		+b.content1
+			+b.blockServices
+				.container
+					+e.title
+						+e('h1')
+							| Our Services
+						| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+						br
+						| blanditiis praessenttium
+					+e.block
+						+e.menu 
+							+e.icon
+							+e.icon
+							+e.icon
+							+e.icon
+						+e.text
+							+e('h1')
+								| Graphic Design
+
+							|At vero eos et accusamus et <span> iusto</span> odio dignissi-
+							br
+							|mos <b class="black">ducimus</b> qui blanditiis praesentium volup-
+							br
+							|tatum deleniti
+							br
+							br
+							|quos dolores et quas molestias excepturi sint occaecati
+							br
+							|cupiditate non provident,<span> similique sunt</span> in culpa qui 
+							br
+							|officia deserunt mollitia animi, id est laborum et do-
+							br
+							|lorum fuga. 
+						+e.skills
+			+b.blockPortfolio
+				.container
+					+e.title
+						+e('h1')
+							| THE PORTFOLIO
+						| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+						br
+						| blanditiis praessenttium
+					+e.block
+						+e.menu 
+							+e('a')(href="#").item All Works 
+							+e('a')(href="#").item Print 
+							+e('a')(href="#").item Identity  
+							+e('a')(href="#").item Branding
+							+e('a')(href="#").item Web 
+							+e('a')(href="#").item HTML  
+							+e('a')(href="#").item Wordpres				
+					
+		+b.content2
+			+b.blockTeam
+				.container
+					+e.title
+						+e('h1')
+							| THE TEAM
+						| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+						br
+						| blanditiis praessenttium
+					
+					+e.slider
+						+e.sliderBlock.js-sliderBlock
+							+e.sliderElem
+								+e.image--1
+								+e.blockText
+									+e('h2') Abdullah Noman
+									br
+									+e('p')(class="heading") 
+										|Creative Director, Code Cafe 
+									br
+									+e('p')(class="text") 
+										| At vero eos et accusamus et iusto odio dignissimos 
+										br
+										|ducimus qui blanditiis praessenttium
+									+b.prgress
+										+e.label BRANDING 80%
+										+e.process--1
+										+e.label Design 65%
+										+e.process--2
+										+e.label Interface 75%
+										+e.process--3
+							
+							+e.sliderElem--2
+								+e.image--2
+								+e.blockText
+									+e('h2') Abdullah Noman
+									br
+									+e('p')(class="heading") 
+										|Creative Director, Code Cafe 
+									br
+									+e('p')(class="text") 
+										| At vero eos et accusamus et iusto odio dignissimos 
+										br
+										|ducimus qui blanditiis praessenttium
+									+b.prgress
+										+e.label BRANDING 80%
+										+e.process--1
+										+e.label Design 65%
+										+e.process--2
+										+e.label Interface 75%
+										+e.process--3
+							+e.sliderElem--3
+								+e.image--3
+								+e.blockText
+									+e.head
+										+e('h2') Abdullah Noman
+										br
+										+e('p')(class="heading") 
+											|Creative Director, Code Cafe 
+									br
+									+e('p')(class="text") 
+										| At vero eos et accusamus et iusto odio dignissimos 
+										br
+										|ducimus qui blanditiis praessenttium
+									+b.prgress
+										+e.label BRANDING 80%
+										+e.process--1
+										+e.label Design 65%
+										+e.process--2
+										+e.label Interface 75%
+										+e.process--3
+					
+						+e.js-masonry#js-masonry
+							+e.grid-sizer
+							+e('img')(src="../../assets/images/image1.jpg").js-masonryItem--tours1#js-masonryItem
+							+e('img')(src="../../assets/images/image2.jpg").js-masonryItem--book1#js-masonryItem
+							+e('img')(src="../../assets/images/image3.jpg").js-masonryItem--book2#js-masonryItem
+							+e('img')(src="../../assets/images/image4.jpg").js-masonryItem--garbeo#js-masonryItem
+							+e('img')(src="../../assets/images/image5.jpg").js-masonryItem--amber#js-masonryItem
+							+e('img')(src="../../assets/images/image6.jpg").js-masonryItem--titleHere#js-masonryItem
+							+e('img')(src="../../assets/images/image7.jpg").js-masonryItem--tours2#js-masonryItem
+							+e('img')(src="../../assets/images/image8.jpg").js-masonryItem--desk#js-masonryItem
+							+e('img')(src="../../assets/images/image9.jpg").js-masonryItem--book3#js-masonryItem
+							+e('img')(src="../../assets/images/image10.jpg").js-masonryItem--tablet#js-masonryItem
+							+e('img')(src="../../assets/images/image11.jpg").js-masonryItem--seat#js-masonryItem
+							+e('img')(src="../../assets/images/image12.jpg").js-masonryItem--beer#js-masonryItem
+
+							
+
+							
+
+	
+							
+			

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.612   0 0 0 0 0.278   0 0 0 0 0.341   0 0 0 1 0" /> </filter>
+		<image width="16" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAMAAADarb8dAAAAflBMVEUAAAAwMDAwMDAxMTExMTEtLS0uLi4uLi7///8qKiorKysmJiYnJycnJyckJCQkJCQgICAgICAdHR0aGhoaGhoaGhoWFhYWFhYTExMTExMTExMPDw8PDw8PDw8ODg4MDAwMDAwJCQkJCQkGBgYFBQUFBQUDAwMCAgICAgICAgL6xXDZAAAAKnRSTlMAD4/f/0/v/wBP/w/v/4//3///H//v/+/f/++P/+8P7/9P/0/v/w+P3//9p26VAAAAhklEQVR4nEXPWRKCQAwE0GYPgog6CoKyCMNy/wsaEkpeVbonfxmAOa7n+77nOlBBGEUR8YSB7PHpEPOepOcNSaYJkF0EaWVAfhXQyoGb+vfdkNnQQ9IAT1VQIQ2UL1VRxVkC9Xv3IY4aaNru0DZ8Wf899HL7MFpriWcc9t9N87Ku6zJP/P4B+zUQE0tFSt4AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer 22" style="filter: url(#flt1)" href="#img1" x="0" y="0" />
+</svg>

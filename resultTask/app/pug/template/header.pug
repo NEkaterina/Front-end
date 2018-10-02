@@ -1,0 +1,48 @@
+header
+	+b.header
+		.container
+			+b.logoMenu
+				+e.logo
+					+e.logoImage
+						+e.image
+						+e.image
+					+e.logoText
+						+e.textHead
+							| TheYalow
+						+e.textLink 
+							| Craft By Css author.com
+				+e.menu
+					+e.UL.list
+						+e.item
+							+e('a')(href="#") About Us	
+						+e.item
+							+e('a')(href="#") Services 	
+						+e.item
+							+e('a')(href="#") Contact
+				+e.shadow
+				+e.shadow--2
+
+		+b.slider
+			+e.sliderBlock.js-sliderBlock
+				+e.sliderElem
+					.container
+						+b.video
+							video(controls preload="auto").video-js.vjs-default-skin.vjs-big-play-centered.js-video
+
+								+e('source')(src="../../assets/video/Sea.mp4" type="video/mp4")
+						+b.text
+							+e.textTheCool The cool
+							+e.textTheMinimal The minimal
+							
+
+				+e.sliderElem
+					.container
+						+b.video
+							video(controls preload="auto").video-js.vjs-default-skin.vjs-big-play-centered.js-video
+
+								+e('source')(src="../../assets/video/BoatTrim.mp4" type="video/mp4")
+						+b.text
+							+e.textTheCool The cool
+							+e.textTheMinimal The minimal
+							
+		

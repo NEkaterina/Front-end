@@ -1,0 +1,668 @@
+@import "../../config/variables";
+
+* {
+	outline: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+.b-content{
+	width:100%;
+	margin:0;
+}
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    padding:0;
+    height: 100%;
+   }
+header{
+	width:100%;
+	height: auto; // 566px;
+	background-image: url('../../assets/images/blockfon1.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.b-header {
+	width: 1300px;  
+	margin: 0 auto; 
+}
+.b-logoMenu{
+	width:100%;
+	vertical-align: middle;
+  	display: inline-block;
+  	font-size:0; 
+  	padding: 25px 0;
+  	&__logo{
+  	  	width: 50%;
+  	  	vertical-align: middle;
+  	  	display: inline-block;
+  	  	font-size:0;
+  	 	 margin-right:60px;
+  	}
+  	  	&__logoImage{
+  	  	    display: inline-block;
+  	  	    vertical-align: middle;
+  	  	    font-size:0; 
+  	  	}
+  	  	&__image{
+		width: 82px;
+		height: 82px;	
+		}
+  	  	&__image:nth-child(1){
+  	  		background-image: url('../../assets/images/logo1.svg');
+			background-position: center center;
+  	  	}
+  	  	&__image:nth-child(2){
+  	  		background-image: url('../../assets/images/logo2.svg');
+  	  		background-position: center center;
+  	  		margin-top: -82px;
+  	  	}
+  	  	&__logoText{
+  			display: inline-block;
+  	  	    vertical-align: middle;
+  	  	    font-size:0; 
+  	  	    
+		}
+		&__textHead{
+  			font-size: 41px;
+  			font-family: "Lucida Sans";
+  			color: $color-white;
+  			font-style: italic;
+  			text-transform: uppercase;
+  			text-align: center;
+  			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+			display: inline-block;
+			margin: 10px 10px 0;
+		}
+		&__textLink{
+  			font-size: 13px;
+  			font-family: "LaoUI";
+ 			color: $color-white-transp;
+  			text-transform: uppercase;
+  			text-align: center;
+  			display: inline-block;
+		}
+		
+  	  	&__menu{
+  	  	width: calc(50% - 60px);
+  	  	vertical-align: bottom;
+  	  	display: inline-block;
+  	  	margin:0;
+  	  	font-size:0;   	  		  	
+  		}
+  		&__list{
+  		    margin: 0;
+  		    padding:0;
+  		    list-style-type: none;
+  		    width: 100%;
+  		    text-align: right;
+  		    font-size:0;
+  		}
+  		&__item {
+  			display: inline-block; 
+  			height:100%;
+  			padding: 5px 0 0;
+  			width: calc((100% - 5px) / 3);
+  			border-right: 1px solid #dcb105;
+  			font-size:0;
+  			background-color: $color-yellow;
+  			text-align: center;
+  		}
+  		&__item a {
+  		    width: calc(100% - 20px);
+  		    height:100%;
+  		    color: $color-gold;
+  		    font-size: 16px;
+  			font-family: "SegoeWP";
+  		    text-decoration: none;
+  		    cursor: pointer;
+  		    text-transform: uppercase;
+  		   text-align: center;
+  		}
+  		&__shadow{
+  		width: calc(50% - 95px);
+  		-moz-box-shadow: 585px -19px 0px 15px $color-gold-trnsp;
+  		-webkit-box-shadow: 585px -19px 0px 15px $color-gold-trnsp;
+ 		 box-shadow: 585px -19px 0px 15px $color-gold-trnsp;
+  		}
+  		&__shadow--2{
+  		width: calc(50% - 95px);
+  		-moz-box-shadow: 622px -21px 0px 15px $color-gold-trnsp;
+  		-webkit-box-shadow: 100px -21px 0px 15px $color-gold-trnsp;
+ 		 box-shadow: 581px -23px 0px 15px $color-gold-trnsp2;
+  		}
+  		&__item:before{
+  			margin-right: 10px;
+  		}
+  		&__item:nth-child(1):before{
+  			margin-left:15px;
+  			margin-right: 10px;
+  			content: url('../../assets/images/Us.svg');
+		
+		}
+			
+  		&__item:nth-child(2):before{
+  			content: url('../../assets/images/services.svg');
+  		}
+
+		
+  		&__item:nth-child(3):before{
+  			content: url('../../assets/images/contact.svg');
+		}
+  		
+
+		&__item:visited {
+		color: #9b7d08;
+		}
+
+		&__item:hover {
+		color: #7e6606;
+		text-shadow: 0px 1px 0px rgba(126, 102, 6, 0.42);
+			
+		}
+
+} 
+.b-slider{
+	padding: 28px 0 70px 0;
+}
+.b-video {
+	padding:0;
+  width: 550px;
+  height: 305px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size:0;
+
+}
+.video-js {
+	margin: 0 auto;
+	width:100%;
+  height:100%;
+}
+ .slick-prev {
+  content: '';
+  left: 0px;
+  width: 35px;
+  top: 220px;
+  height: 65px;
+  z-index: 1;
+  background-color: $color-yellow-arrow;
+
+  @media(max-width: 1023px) {
+    display: none;
+  }
+
+  &:hover {
+  	box-shadow: 0 -5px 20px rgba($color-yellow-arrow,.3);
+    background-color: rgba($color-yellow-arrow, 0.6);
+  }
+
+  &:focus {
+    background-color: $color-yellow-arrow;
+  }
+
+  &:before {
+    content: url('../../assets/images/arrowLeft.svg');
+  }
+}
+.slick-next {
+  right: 0px;
+  top: 220px;
+  width: 35px;
+  height: 65px;
+  font-size: 0;
+  background-color: $color-yellow-arrow;
+
+  @media(max-width: 1023px) {
+    display: none;
+  }
+
+  &:hover {
+  	box-shadow: 0 -5px 20px rgba($color-yellow-arrow,.3);
+    background-color: rgba($color-yellow-arrow, 0.6);
+   }
+
+  &:focus {
+    background-color: $color-yellow-arrow;
+  }
+
+  &:before {
+    content: url('../../assets/images/arrowRight.svg');
+  }
+}
+
+
+
+.b-text {
+  display: inline-block;
+  width: 45%;
+  font-size:0;
+   vertical-align: middle;
+   
+ 
+  &__textTheCool {
+    display: block;
+    color: $color-yellow;
+    vertical-align: middle;
+    font-size: 63px;
+  font-family: "Asap";
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  }
+
+  &__textTheMinimal{
+    display: block;
+    color: white;
+     vertical-align: middle;
+     font-size: 63px;
+  font-family: "Asap";
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  }
+}
+
+.b-blockIcon{
+	width: 100%;
+	height: 220px;	
+	font-size: 0;
+	 background:
+    linear-gradient(45deg, white 25%, #f0f0f0 0, 
+    #f0f0f0 50%, white 0, white 75%, #f0f0f0 0);
+  	background-size:7px 7px;
+  	padding:0;
+  	box-shadow: 0 -5px 20px rgba(0,0,0,.5);
+
+	&__iconItem{
+	width: calc(100%/3);
+	height: 100%;
+    text-align: center;
+    font-size: 27px;
+    font-family: "Segoe UI";
+    color: #000;
+    line-height: 0;
+    text-transform: uppercase;
+    transition: .2s;
+	display: inline-block;
+  	&:hover {
+      text-decoration: none;
+      color: black;
+      background-color: rgba($color-yellow, 0.4);
+      text-shadow: 0px 1px 0px rgba(126, 102, 6, 0.42);
+      transition: .2s;
+    } 
+	}
+	&__iconItem:nth-child(1){
+		border-left: 1px solid #d4d4d4;
+		border-right: 1px solid #d4d4d4;  
+	}
+	&__iconItem:nth-child(3){
+		border-left: 1px solid #d4d4d4;
+		border-right: 1px solid #d4d4d4;  
+	}
+	a{
+		 text-decoration: none;
+	}
+
+	&__icon{
+		display: inline-block;
+		width: calc(100%/3);
+		 height: 80%;
+		vertical-align: middle;
+		
+	}
+
+
+	&__icon--1{
+		background: url('../../assets/images/iconBetter.svg') no-repeat;
+		background-position: center center;
+	}
+	 &__icon--2{
+		background: url('../../assets/images/iconCustomise.svg') no-repeat;
+		background-position: center center;
+	}
+	 &__icon--3{
+		background: url('../../assets/images/iconItsFree.svg') no-repeat;
+		background-position: center center;
+	}
+	&__label {
+	  	display:block;
+	  	line-height: 0;
+	}
+
+}
+.b-blockSection1{
+	widht: 100%;
+	margin: 0 auto;
+	background-image: url('../../assets/images/background4.png');
+  	height: 500px;
+  	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	padding: 45px 0 20px;
+ 	box-shadow: inset 0px 5px 20px -5px rgba(0,0,0,0.5);
+ 	overflow: auto;
+  	white-space: nowrap;
+
+
+}
+.b-mainContent{
+	width:100%;
+	font-size:0;
+&__blockDisc {
+    display: inline-block;
+    margin-right: 35px;
+  }
+
+  &__twitterBlock {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 77px;
+    width: 338px;
+    height: 231px;
+    background-color: #ec9e03;
+    color: $color-white;
+    font-size:0;
+  }
+&__heading {
+  font-size: 29px;
+  font-family: "Segoe WP";
+  color: $color-white;
+  line-height: 1.308;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 40px;
+
+}
+&__content {
+  display: block;
+  font-size: 0;
+}
+  &__textBlock {
+    display: inline-block;
+  }
+
+  &__videoBlock{
+    display: inline-block;
+    vertical-align: top;
+    width: 314px;
+  height: 231px;
+  }
+.b-text {
+  font-size: 29px;
+  font-family: "Segoe WP";
+  color: $color-white;
+  line-height: 1.308;
+  text-align: left;
+  width: 330px;
+  height: 231px;
+  background-color: #ec9e03;
+  display: block;
+  white-space: normal;
+  padding: 25px 30px;
+  &__iconplus {
+  padding:0;
+  margin-right:0;
+  margin-left:auto;
+  background: url('../../assets/images/iconPlus.svg');  
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 11px;
+  height: 11px;
+}
+}
+
+&__dateBlock {
+  width: 112px;
+  background-color: #ddb101;
+  padding-top: 15px;
+}
+  &__textday {
+    font-size: 51px;
+    font-family: "Segoe UI";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.744;
+    text-align: center;
+  }
+
+  &__textmonth {
+    font-size: 21px;
+    font-family: "Segoe UI";
+    color: rgb(178, 101, 41);
+    line-height: 1.805;
+    text-align: center;
+    text-transform: uppercase;
+  
+}
+&__image{
+	width:100%;
+	height:100%;
+	background-image: url('../../assets/images/twitter.svg');  
+ 	background-repeat: no-repeat;
+ 	margin: 5% 25%;
+}
+
+  &__plus {
+ 	margin-right:10px;
+	 margin-left: auto;
+  background: url('../../assets/images/iconPlus.svg');  
+  background-repeat: no-repeat;
+  margin-top:-95px;
+  width: 11px;
+  height: 11px;
+  }
+
+  &__number {
+    
+    font-size: 25px;
+    font-family: "Segoe WP";
+    color: rgb(255, 255, 255);
+    line-height: 1.517;
+    text-align: right;
+    margin-right:10px;
+	
+  
+}
+
+
+
+}
+.mCSB_1_scrollbar .mCSB_dragger .mCSB_draggerRail{ width: 4px; }
+
+#mCSB_1_scrollbar_horizontal .mCSB_dragger{
+  height: 15px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(white, 0.47);
+  height: 15px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #ec9e03;
+  height: 15px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #b77c03;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: #b77c03;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+  position: absolute;
+  top: -5px;
+  left: 70px;
+  bottom: 0;
+  right: 50px;
+  height: 15px;
+}
+
+
+
+.b-blockSection2{
+	width: 100%;
+	font-size: 0;
+	background-image: url('../../assets/images/backgroundSection2.png');
+  	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	padding: 50px 0 80px;
+   &__header{
+  font-size: 43px;
+  font-family: "PTSans";
+  color: rgb(245, 197, 6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+   } 
+   &__mainContent{
+   	width:100%;
+   	font-size:0;
+   }
+   &__image{
+   	width: 54%;
+   	height: 297px;
+   	background-image: url('../../assets/images/imageBlock5.png');
+  	background-repeat: no-repeat;
+ 	background-size: 100%;
+   	display: inline-block;
+   	margin-right:65px;
+   }
+   &__list{
+   	width: calc(46% - 65px);
+   	vertical-align: top;
+   	padding-top: 100px;
+   	display: inline-block;
+   	font-size: 22px;
+  	font-family: "OpenSans";
+  	color: rgb(169, 169, 167);
+  	line-height: 1.2;
+  	text-align: justify;
+    		
+   }
+   &__menu{
+    list-style-image: url('../../assets/images/iconListStyle.svg');
+   }
+   li{
+   	padding-bottom:10px;
+   }
+
+}
+footer{
+	width:100%;
+	height: auto;
+	background-color: #4c4c4c;
+}
+.b-footer {
+	box-shadow: 0 -5px 20px rgba(0,0,0,.5);
+	&__logo{
+  	  	width: 50%;
+  	  	vertical-align: top;
+  	  	display: inline-block;
+  	  	font-size:0;
+  	  	}
+  	  	&__logoImage{
+  	  	    display: inline-block;
+  	  	    vertical-align: top;
+  	  	    font-size:0;
+  	  	}
+  	  	&__image{
+		width: 54px;
+		height: 54px;	
+		}
+  	  	&__image:nth-child(1){
+  	  		background-image: url('../../assets/images/footerLogo1.svg');
+			background-position: center center;
+  	  	}
+  	  	&__image:nth-child(2){
+  	  		background-image: url('../../assets/images/footerLogo2.svg');
+  	  		background-position: center center;
+  	  		margin-top: -54px;
+  	  	}
+  	  	&__logoText{
+  			display: inline-block;
+  	  	    vertical-align: middle;
+  	  	    font-size: 29px;
+  			font-family: "Lucida Sans";
+  			color: $color-white;
+  			font-style: italic;
+  			text-transform: uppercase;
+  			text-align: center;
+  			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+			margin: 5px 10px 0; 
+
+		}
+		a {
+			text-decoration: none;
+		}
+		
+	
+		a:hover{
+  			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+			font-size: 30px;
+			color: $color-white;
+  			}
+  			a:visited{
+			color: $color-white;
+  			}
+  			a:link{
+			color: $color-white;
+  			}
+  			a:active{
+			color: $color-white;
+  			}
+		&__logoText{
+  			display: inline-block;
+  	  	    vertical-align: middle;
+  	  	    font-size: 29px;
+  			font-family: "Lucida Sans";
+  			color: $color-white;
+  			font-style: italic;
+  			text-transform: uppercase;
+  			text-align: center;
+  			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+			margin: 5px 10px 0; 
+
+		}
+		&__textLink{
+			width: calc(50% - 5px);
+  			display: inline-block;
+  	  	    margin-top:10px;
+  	  	   font-size:0;
+  	  	   text-align: right;
+  	  	  }
+		&__text{
+  	  	    font-size: 17px;
+  			font-family: "OpenSans";
+  			color: $color-white;
+  			a:hover{
+  			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+			font-size: 18px;
+			color: $color-white;
+  			}
+  			a:visited{
+  			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+			font-size: 18px;
+			color: $color-white;
+  			}
+  			a:active{
+  			font-size: 17px;
+			color: $color-white;
+  			}
+  			a:link{
+			color: $color-white;
+  			}
+		}
+	
+}
+
+
+
+

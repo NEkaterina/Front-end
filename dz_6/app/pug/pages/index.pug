@@ -1,0 +1,99 @@
+include ../../../node_modules/bemto.pug/bemto.pug
+include ../template/bem.pug
+include ../template/link.pug
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(title="index")
+		+style()
+		+script()
+	body
+		+b.content
+			+b.header
+				+e.logo
+					+e.logo--icon
+						
+					+e.logo--text
+						| inimal
+				+e.menu
+					+e('ul')
+						+e
+							+e('a')(href="#") Product
+						+e 
+							+e('p') | 	
+						+e
+							+e('a')(href="#") Services 
+						+e  
+							+e('p') | 		
+						+e
+							+e('a')(href="#") Contact	
+
+			+b.block-phone
+				+b.slider
+					+e.backgroundIcon
+						+e.icon--desktop
+					+e.backgroundIcon
+						+e.icon--iPad
+					+e.backgroundIcon
+						+e.icon--iPhone
+				+e.image
+					+e.imageItem
+					+e.imageItem
+					+e.imageItem
+					+e.imageItem
+				+b.textBlock
+					+e.textIcon
+						| app of 
+						| the year
+					+e.textMiddle
+					+e.H1.textMiddle--heading
+						| my apps shoecase
+					+e.textMiddle--text
+						| Lorem ipsum is simply dummy text .....
+					+e.buttonBuy
+						+e.buttonBuy--icon
+						+e('a')(href="#").buttonBuy--button Buy now
+
+			+b.block-about
+				+e.text
+					+e('h1') About minimal
+					+e('p') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type  and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+				+b.image
+					+e.line1
+					+e.line2
+					+e.phone
+					+e.text
+						+e('h1') APP 
+						+e('p') Of the year  
+			+b.block-icon
+				+e.iconItem
+				+e.iconItem
+				+e.iconItem
+				+e.iconItem
+				+e.iconItem
+				+e.iconItem
+			+b.block-desktop
+				+e.image
+					+e.imageItem
+				+b.textBlock
+					+e.textMiddle
+					+e.H1.textMiddle--heading
+						| my apps shoecase
+					+e.textMiddle--text
+						| Lorem ipsum is simply dummy text .....
+					+e.buttonBuy
+						+e.buttonBuy--icon
+						+e('a')(href="#").buttonBuy--button Buy now
+			+b.block-project
+				+b.text 
+					+e('p') 60%
+					+e('p') Of project 
+					+e('p') Completed
+				+b.background
+					+e.arrow
+			+b.footer
+				+e.text Copyright © 2012 Css Author 
+
+
+ 

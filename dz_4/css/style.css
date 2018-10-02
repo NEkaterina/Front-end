@@ -1,0 +1,208 @@
+body{
+	
+	margin: 0;
+	background-color: #f5f8fa;
+}
+.content{
+	margin: auto;
+	width: 884px;
+	
+}
+.caption {
+	margin:  40px auto;
+}
+.caption p{
+	text-align: left;
+	 color: #869096; 
+	 font-size: 36px;
+    font-weight: 100;
+}
+
+.caption p a.login {
+    font-size: 16px;
+    float: right;
+    margin-top: 20px;
+    color: #869096;
+}
+.form{
+	height: 550px;
+	background-color: white;
+	padding:  20px 20px 20px 40px;    
+}
+.block{
+	width: calc(50% - 20px);
+	display: inline-block;
+    vertical-align: middle;
+}
+.block h1{
+    font-size: 21px;
+    color: #20c3c4;
+    margin:  20px  0 20px 20px;
+}
+.label{
+	display: block;
+	font-size: 18px;
+	color: #869096;
+	margin-left: 20px;
+}
+ label.required:after {
+     color: red;
+    content: " *";
+}
+input{
+    box-shadow: 0 1px 0 rgba(0,0,0,.08) inset;
+    background-color: #f5f7fa;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.left input{
+	float: left;
+	width: calc(100% - 70px);
+	 margin: 10px 20px 20px 20px;
+}
+.right h1{
+	margin-top: 40px;
+}
+p.rightText {
+	color: rgb(204, 156, 156);
+	float: right;
+	font-size: 15px;
+	margin-top: 0;
+} 
+.blockRadio, .checkbox{
+	margin-left:20px; 
+}
+
+.blockRadio label {
+	display: inline-block;
+	width: calc(50% - 28px);
+	cursor: pointer;
+	margin: 0 10px;
+    padding: 0 0 5px 0px; 
+	font-size: 20px;
+	background-color: #f5f8fa;
+	text-align: center;
+}
+input[type=radio] {
+	display: none;
+}
+.blockRadio label::before {
+	content: "";
+    display: block;	 
+	width: 16px;
+	height: 16px;
+	margin: -5px 70px  5px;	
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.blockRadio input[type=radio]:checked + label::before{
+    content: "";
+    background-color: #20c3c4;
+   
+}
+.first{
+	font-size: 18px;
+}
+.second{
+	font-size: 22px;
+}
+.third{
+	font-size: 15px;
+}
+.checkbox{
+	margin: 15px;
+}
+
+ .checkbox input{
+	display:none;
+}
+input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 18px;
+	color: #869096;
+}
+
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 2px solid grey;
+    border-radius: 10px; 
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label::after {
+   content: '';
+   position: absolute;
+   width: 7px;
+   height: 5px;
+   background: rgba(0, 0, 0, 0);
+   top: 6px;
+   left: 5px;
+   border: 3px solid #1062a4;
+   border-top: none;
+   border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.list p{
+	font-size: 18px;
+	color: black;
+	margin-left: 15px;
+	margin-bottom: -10px;
+}
+ul{
+	list-style: none;
+	margin-bottom: 0; 
+}
+ .list li{
+    font-size: 17px;
+	color: #869096;
+	
+}
+.list li:before {
+    content: "✓";
+    font-size: 100%;
+    color: #38dedf;
+    margin-right: 7px;
+    vertical-align: middle;
+    margin-left: -20px;
+  }  
+.list a{
+	color: black;
+	font-size: 17px;
+	margin-left: 20px;
+}
+button {
+    background-color: #20c3c4;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 40px 22px;
+    display: block;
+    width: 760px;
+    margin: -100px auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+.input::placeholder{
+	color: #cccccc;
+}
+.input.username::placeholder{
+	text-align: right
+}

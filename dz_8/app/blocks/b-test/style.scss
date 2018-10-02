@@ -1,0 +1,385 @@
+* {
+	outline: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+.b-content1{
+	width:100%;
+	margin:0;
+	background-color: #f3f3f3;
+    
+}
+.b-content2{
+    width:100%;
+    margin:0;
+    background-color: #ffffff;
+   
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+    padding:0;
+    height: 100%;
+    max-width: calc(100% - 50px);
+   
+}
+.b-blockServices{
+    width:100%;
+    padding: 110px 40px 45px;
+    
+    &__title{
+        width:100%;
+        text-align:center;
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(129, 134, 142);
+        line-height: 1.786;
+    }
+    &__title h1{
+        padding-bottom: 36px;
+        font-size: 20px;
+        font-family: "SourceSansPro";
+        color: rgb(51, 59, 70);
+        text-transform: uppercase;
+        line-height: 0.6;
+    }
+    &__block{
+        width:100%;
+        vertical-align: middle;
+        display: inline-block;
+       
+        font-size:0;
+    }
+    &__menu{
+        
+         margin-top: 56px;
+         vertical-align: middle;
+                 display: inline-block;
+                 
+    }
+
+    &__icon{
+    width: 53px;
+    height: 53px;
+    background-color: #81868e;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    }
+    &__icon:nth-child(1){
+        background-image: url('../../assets/images/vilka.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        }
+        &__icon:nth-child(2){
+        background-image: url('../../assets/images/vilka.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        }
+        &__icon:nth-child(3){
+        background-image: url('../../assets/images/vilka.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        }
+        &__icon:nth-child(4){
+        background-image: url('../../assets/images/vilka.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        }
+        &__text{
+width: 403px;
+   font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(129, 134, 142);
+  line-height: 1.786;
+           vertical-align: middle;
+                   display: inline-block;
+       margin: 0 47px 0 42px ;
+        }
+         &__text h1{
+        font-size: 20px;
+         font-family: "OpenSans";
+        color: rgb(70, 70, 70);
+         text-align: left;
+         padding:0;
+         line-height: 4;
+         }
+         &__text span{
+            font-weight: bold;
+            color: #45c8ac;
+         }
+         .black{
+            color:black;
+         }
+         &__icon:hover{
+             background-color: #45c8ac;
+         }
+
+
+}
+.b-blockPortfolio{
+    width:100%;
+    margin-top:40px;
+   
+   
+    &__title{
+        width:100%;
+        text-align:center;
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(129, 134, 142);
+        line-height: 1.786;
+    }
+    &__title h1{
+        padding-bottom: 36px;
+        font-size: 20px;
+        font-family: "SourceSansPro";
+        color: rgb(51, 59, 70);
+        text-transform: uppercase;
+        line-height: 0.6;
+    }
+    &__block{
+        width:100%;
+        text-align:center;
+        vertical-align: middle;
+        display: inline-block;
+        font-size:0;
+    }
+    &__menu{
+        width:100%;
+         margin-top: 56px;
+         vertical-align: middle;
+        display: inline-block;
+    }
+
+    &__item {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(70, 70, 70);
+    margin-right: 32px;
+   
+    }
+    &__menu a{
+         text-decoration: none;
+            cursor: pointer; 
+    }
+    &__item:hover{
+        color: rgb(70, 70, 70);
+        border-bottom: 1.5px solid rgb(25, 189, 154);
+        padding-bottom: 10px;
+    }
+    &__block2{
+         width:100%;
+         margin-top: 56px;
+         height: 500px;
+         backgroung-color: black;
+    }
+   
+
+
+}
+.b-blockTeam{
+    width:100%;
+    margin-top:40px;  
+
+    &__title{
+        width:100%;
+        text-align:center;
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(129, 134, 142);
+        line-height: 1.786;
+    }
+    &__title h1{
+        padding-bottom: 36px;
+        font-size: 20px;
+        font-family: "SourceSansPro";
+        color: rgb(51, 59, 70);
+        text-transform: uppercase;
+        line-height: 0.6;
+    }
+    &__slider{
+        width: 100%;
+        padding:50px 0 30px 29px;
+       
+    }
+    &__sliderBlock{
+        width: 100%;
+      
+    }
+    &__image {
+        width: 25%;
+        height: 365px;
+        background-repeat: no-repeat;
+        margin:0;
+        vertical-align: middle;
+        display: inline-block;
+        font-size:0;
+        &--1 {
+            background-image: url(../../assets/images/1.png);
+            background-size:100%;
+        }
+
+        &--2 {
+            background-image: url(../../assets/images/1.png);
+            background-size:100%;
+        
+        }
+
+        &--3 {
+            background-image: url(../../assets/images/1.png);
+            background-size:100%;
+        
+        }
+    }
+    .slick-dots li button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2 solid #19bd9a;
+    cursor: pointer; 
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:active {
+background: #19bd9a;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus{
+outline: none;
+}
+    &__blockText{
+        width: 74%;
+       vertical-align: top;
+      display: inline-block;
+      text-align: right;
+      
+       font-size:0;
+      h2{
+        font-size: 20px;
+        font-family: "OpenSans";
+         color: rgb(70, 70, 70);
+         margin-bottom:0;
+         padding-right: 29px; 
+         border-right:4px solid #19bd9a;
+  }
+
+    }  
+    &__heading{
+  font-size: 14px;
+  color: rgb(129, 134, 142);
+  text-transform: uppercase;
+  text-align: right;
+  font-style: italic;
+  padding-right: 29px;
+  border-right:4px solid #19bd9a;
+    }  
+    &__text{
+          font-size: 14px;
+         color: rgb(129, 134, 142);
+         margin-bottom:0px;
+         padding-right: 29px; 
+    }  
+    .b-prgress{
+      width: 45%;
+      text-align: right;
+       font-size:0;
+     margin-left:55%;
+     padding-right: 29px; 
+
+&__process{
+    display:block;
+    background-color: #19bd9a;
+    height: 5px; 
+      &--1{
+        width: 80%;   
+        animation-name: progressBar;
+         animation-iteration-count: 1;
+        animation-duration: 2s;
+      } 
+      &--2{
+       width: 65%;  
+      animation-name: progressBar2;
+      animation-iteration-count: 1;
+      animation-duration: 2s;
+      } 
+      &--3{
+        width: 75%;  
+      animation-name: progressBar3;
+      animation-iteration-count: 1;
+      animation-duration: 2s;
+      } 
+}
+    &__label{
+
+  font-size: 16px;
+  color: rgb(129, 134, 142);
+  text-transform: uppercase;
+ justify-content: space-between;
+  text-align: justify;
+  text-align-last: justify;
+      margin-top:25px;
+}
+    
+    @keyframes progressBar {
+      0% {
+    width: 10%;
+      }
+      
+      100% {
+    width: 80%;
+      }
+    }
+    @keyframes progressBar2 {
+      0% {
+    width: 10%;
+      }
+      
+      100% {
+    width: 65%;
+      }
+    }
+    @keyframes progressBar3 {
+      0% {
+    width: 10%;
+      }
+      
+      100% {
+    width: 75%;
+      }
+    }
+     }
+     
+      &__js-masonry {
+        width: 100%;
+        font-size: 0;
+    }
+
+    &__js-masonryItem {
+        width: 270px;
+        margin: 5px;
+        float: left;
+
+        @media(max-width: 1120px) {
+            width: 25%;
+        }
+    }
+
+    &__grid-sizer {
+        width: 25%;
+
+        @media(max-width: 1120px) {
+            width: 10%;
+        }
+    }
+
+
+}

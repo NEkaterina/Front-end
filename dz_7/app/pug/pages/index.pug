@@ -1,0 +1,113 @@
+include ../../../node_modules/bemto.pug/bemto.pug
+include ../template/bem.pug
+include ../template/link.pug
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(title="index")
+		+style()
+		+script()
+	body
+		+b.content
+			header
+				+b.header
+					.container
+						+e.logo
+							+e.logoImage
+								+e.image 
+								+e.image
+								+e.image
+								+e.H1.text M
+							+e.logoText
+								| minto
+				
+						+e.menu 
+							+e.menuIcon
+								+e('span')
+								+e('span')
+								+e('span')
+								
+							+e.UL.list
+								+e.item
+									+e('a')(href="#") Home
+								+e.item
+									+e('a')(href="#") About Us	
+								+e.item
+									+e('a')(href="#") Services 	
+								+e.item
+									+e('a')(href="#") Contact Us
+
+
+			
+			.container
+				+b.slider
+					+e.sliderBlock.js-sliderBlock
+						+e.sliderElem--berry
+							+e('h1') Minto
+							
+							+e.text A minimal Web Design from cssauthor.com
+							
+
+						+e.sliderElem--flower
+							+e('h1') Minto
+							
+							+e.text A minimal Web Design from cssauthor.com
+							
+						+e.sliderElem--relax
+							+e('h1') Minto
+						 
+							+e.text A minimal Web Design from cssauthor.com
+				+b.descriptionBlock1
+					+e.text
+						+e('span')
+							| Lorem ipsum dolor sit amet
+						|, consectetur adipisicing elit, sed do eiusmod
+						| tempor incidi-
+						br
+						| dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						| ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				+b.descriptionBlock2
+					+e.image
+						+e.background.circle
+						+e.background.berry
+					+e.text
+						+e('h1').heading
+							| Lorem ipsum dolor sit amet
+						| Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque lau- dantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+						br
+						+e('a')(href="#").text--link Read more
+				+b.descriptionBlock3
+					+e.text
+						+e.text--lineText
+								b 
+									| Where&nbsp;
+								| We Have Been Featured
+					+e.blockSponsor
+						+e.background
+							+e.icon--1
+						+e.background
+							+e.icon--2
+						+e.background
+							+e.icon--3
+						+e.background
+							+e.icon--4
+			footer
+				.container
+
+					+b.footer
+						+e.vertical
+						+e.footerText
+							| © Copyright 2010 - All rights reserved
+						+e(a)(href="#").footerIcon.__footerIcon--twitter
+						+e(a)(href="#").footerIcon.__footerIcon--facebook
+
+
+
+
+							
+
+							
+
+
+			
